@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+#navigation {
+    width: 100vw;
+    display: flex;
+    text-align: center;
+    z-index: 2;
+    margin-bottom: 30px;
+    justify-content: center;
+    
+
+}
+
+#navigation a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    font-family: 'Indie Flower', cursive;
+
+
+}
+
+#navigation a:visited {
+    background-color: black;
+    
+}
+
+#navigation a:link {
+    background-color: transparent;
+    color: gray;
+
+}
+
+#navigation a:hover {
+    background-color: rgb(161, 98, 180);
+    color: white;
+}
+
+#navigation a:active {
+    background-color: dimgray;
+    color: coral;
+    
+}
+
+#logo-nav {
+    justify-content: center;
+    width: 250px;
+    margin: auto;
+}
+
+ul {
+    display: flex;
+    background-color: transparent;
+    padding: 0;
+    flex-wrap: nowrap;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    text-align: center;
+    position: relative;
+    justify-content: center;
+
+}
+
+li {
+    display: inline;
+    list-style-type: none;
+    padding: 8px;
+    background-color: transparent;
+    flex: 0 1 auto;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+    color: #707070;
+    
+}
+
+
+#container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    transform: translatey(40px);
+    z-index: 20;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 500px) {
+    #navigation{
+        height: auto;
+        margin-bottom: 80px;
+    }
+}

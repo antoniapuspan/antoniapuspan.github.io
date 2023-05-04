@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(241, 241, 241);
+    z-index: -11;
+}
+#placeholder {
+    z-index: -15;
+    width: 1px;
+    height: 100vh;
+}
+#top-div {
+    z-index: -10;
+    position: fixed;
+}
+#intro {
+    flex-direction: row;
+    height: 75vh;
+    display: flex;
+    text-align: center;
+    align-content: flex-start;
+    margin-left: 20vw;
+    padding-top: 15vh;
+}
+
+#intro-text {
+    font-family: 'Indie Flower', cursive;
+    display: inline-block;
+    position: sticky;
+    text-align: justify;
+}
+
+#hero-img {
+    display: flex;
+    justify-content: center;
+    margin: auto 89px;
+    margin-left: 0;
+}
+
+#hero-img img {
+    display: inline-block;
+    width: 300px;
+    height: auto;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+#description {
+    font-size: 15px;
+    width: 350px;
+    color: #707070;
+}
+/* .flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+} */
+
+.hello {
+    font-size: 30px;
+    color: #707070;
+}
+
+.name {
+    font-size: 50px;
+    color: #c9afde;
+}
+
+#name {
+    width: 450px !important;
+    text-align: justify;
+    font-size: 50px;
+}
+
+#helloDiv {
+    width: 450px;
+}
+
+/* #container2 {
+    position: fixed;
+    right: 10vw;
+    top: 15vw;
+    height: 45vh;
+    border-radius: 100%;
+    z-index: 1;
+    cursor: pointer;
+
+} */
+
+button {
+    margin-top: 20px;
+    border: none;
+    color: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 8px -3px rgba(66, 66, 66, 0.45);
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+#round_button {
+    background-color: transparent;
+    color: #707070;
+    border: 1px solid #c9afde;
+}
+
+#about-container {
+    display: flex;
+    flex-direction: row;
+    height: 50vh;
+    background-color: #c9afde;
+}
+
+#about-paragraph {
+    display: flex;
+    font-family: 'Indie Flower', cursive;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    color: white;
+}
+.header {
+    display: flex;
+    font-family: "Libre Caslon Text", serif;
+    color: #707070;
+}
+
+#about-h1 {
+    transform: rotate(-90deg) translateX(-180px) translateY(-75px);
+    text-align: left;
+    font-size: 50px;
+    color: white;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    font-family: "Bodoni Moda", serif;
+    letter-spacing: 2px;
+}
+#profile-picture {
+    margin: auto 89px;
+    margin-left: 0;
+}
+#profile-picture img {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+#work-container {
+    justify-content: space-evenly;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(241, 241, 241);
+}
+
+#work-container h1 {
+    margin-left: 15vw;
+}
+
+#projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+/* .sides {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#side1 {
+    border-right: #707070 solid 1px;
+}
+
+#side1 .proj-img {
+    padding-top: 80px;
+} */
+
+.proj-img {
+    width: 250px;
+    height: 250px;
+    filter: grayscale(100%);
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 250px;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+}
+.proj-img img {
+    height: 100%;
+}
+
+.proj-img:hover {
+filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+}
+#skills-container {
+    padding-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    background-color: rgb(241, 241, 241);
+}
+
+#skills-header h1 {
+    margin-right: 15vw;
+    color: #707070;
+    font-family: "Libre Caslon Text", serif;
+}
+
+#row1,
+#row2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#skill-icons {
+    width: 70%;
+    margin: auto;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.skill-icon {
+    width: 80px;
+    justify-content: space-around;
+    filter: grayscale(100);
+}
+
+#procreate {
+    padding-top: 15vh;
+    margin: 0 15vw;
+    background-color: rgb(241, 241, 241);
+    height: 130vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-bottom: 15vh;
+}
+
+#pro-header h1 {
+    color: #707070;
+    font-family: "Libre Caslon Text", serif;
+}
+
+#passion-text {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Indie Flower', cursive;
+    color: #707070;
+
+}
+.pro-row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pro-row img {
+    width: 250px;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+}
+
+.pro-row img:hover {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+}
+/*-----ANNIMATION------ */
+span {
+    display: inline-block;
+}
+
+.staggered-animation {
+    animation: staggered-animation 2.1s linear;
+    animation-timing-function: cubic-bezier(0, 0.73, 0.91, 1.42);
+    animation-delay: calc(var(--character) * 0.1s);
+    animation-fill-mode: both;
+    --character: 0s;
+}
+
+@keyframes staggered-animation {
+    0% {
+        opacity: 0;
+        transform: translate(0, 40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
